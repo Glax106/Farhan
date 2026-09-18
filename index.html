@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#060711" />
+  <meta name="description" content="Farhan — @farhan.diary_ — an ethereal visual diary." />
+  <title>Farhan — @farhan.diary_</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader" class="loader">
+    <canvas id="loaderCanvas"></canvas>
+    <div class="loader-vignette"></div>
+    <div class="loader-content">
+      <div class="loader-mark">F</div>
+      <div id="loaderPercent">0%</div>
+      <div id="loaderStep">Gathering Starlight...</div>
+      <div class="loader-line"><span id="loaderBar"></span></div>
+    </div>
+  </div>
+
+  <main id="app" class="app">
+    <canvas id="skyCanvas"></canvas>
+    <div class="aurora aurora-a"></div>
+    <div class="aurora aurora-b"></div>
+    <div class="grain"></div>
+    <div class="vignette"></div>
+
+    <header class="topbar">
+      <div class="location-pill glass">
+        <span class="live-dot"></span>
+        <span>SKY / DIARY</span>
+      </div>
+      <div class="top-time glass" id="topTime">--:--</div>
+    </header>
+
+    <section class="hero">
+      <div class="profile-wrap">
+        <div class="profile-aura"></div>
+        <div class="profile-orbit orbit-one"></div>
+        <div class="profile-orbit orbit-two"></div>
+        <div class="profile-card glass">
+          <div class="profile-image-wrap">
+            <img src="assets/farhan.jpg" alt="Farhan" class="profile-image" />
+            <span class="profile-shine"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="identity">
+        <div class="eyebrow">Sky Is The Limit</div>
+        <h1>Farhan</h1>
+        <a class="handle" href="https://www.instagram.com/farhan.diary_/" target="_blank" rel="noopener">@farhan.diary_</a>
+        <p>Capturing quiet moments between clouds and silence.</p>
+      </div>
+    </section>
+
+    <section class="art-stage" id="artStage">
+      <div class="ray ray-a"></div>
+      <div class="ray ray-b"></div>
+
+      <div class="orb" id="orb">
+        <div class="orb-inner"></div>
+        <div class="orb-highlight"></div>
+        <div class="orb-ring ring-a"></div>
+        <div class="orb-ring ring-b"></div>
+      </div>
+
+      <div class="float-card card-left glass" id="cardLeft">
+        <span class="card-kicker">ATMOSPHERE</span>
+        <strong>Sky Mode <i>Active</i></strong>
+        <small><span class="pulse"></span> drifting softly</small>
+      </div>
+
+      <div class="float-card card-right glass" id="cardRight">
+        <span class="card-kicker">LOCAL TIME</span>
+        <strong id="cardTime">--:--</strong>
+        <small id="cardDate">---</small>
+      </div>
+
+      <div class="wave-card glass">
+        <div class="wave-meta">
+          <span>AMBIENT</span>
+          <span>∞</span>
+        </div>
+        <div class="wave" id="wave"></div>
+      </div>
+    </section>
+
+    <nav class="dock glass" aria-label="Social links">
+      <a class="social instagram" href="https://www.instagram.com/farhan.diary_/" target="_blank" rel="noopener" aria-label="Instagram">
+        <i data-lucide="instagram"></i>
+      </a>
+      <a class="social youtube" href="#" aria-label="YouTube" data-unset="true">
+        <i data-lucide="youtube"></i>
+      </a>
+      <a class="social discord" href="#" aria-label="Discord" data-unset="true">
+        <i data-lucide="message-circle"></i>
+      </a>
+    </nav>
+
+    <footer class="footer">
+      <span>Developed By</span>
+      <a href="https://glaxiblade.is-a.dev" target="_blank" rel="noopener">Glax Studio</a>
+    </footer>
+
+    <div class="touch-hint">MOVE TO BEND THE SKY</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
